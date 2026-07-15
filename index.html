@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Task Manager</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+
+            <div>
+                <h1>📋 Smart Task Manager</h1>
+                <p>Organize your daily work efficiently</p>
+            </div>
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search your tasks...">
+
+        </div>
+
+        <!-- Add Task -->
+
+        <div class="task-card">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter Task">
+
+            <div class="options">
+
+                <select id="priority">
+
+                    <option value="High">🔴 High Priority</option>
+                    <option value="Medium">🟡 Medium Priority</option>
+                    <option value="Low">🟢 Low Priority</option>
+
+                </select>
+
+                <input type="date" id="dueDate">
+
+            </div>
+
+            <button id="addTaskBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Task
+
+            </button>
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progress-card">
+
+            <div class="progress-info">
+
+                <span>Today's Progress</span>
+
+                <span id="progressText">0%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+            <div class="counter">
+
+                <span>
+                    Total :
+                    <strong id="totalTasks">0</strong>
+                </span>
+
+                <span>
+                    Completed :
+                    <strong id="completedTasks">0</strong>
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Filters -->
+
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-filter="all">
+                All
+            </button>
+
+            <button
+                class="filter"
+                data-filter="pending">
+                Pending
+            </button>
+
+            <button
+                class="filter"
+                data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Task List -->
+
+        <ul id="taskList">
+
+            <!-- Tasks Added by JavaScript -->
+
+        </ul>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
