@@ -1,5 +1,5 @@
 // Smart Task Manager
-
+This application provides an easy way to manage daily tasks with priority and progress tracking.
 This project is a **Smart Task Manager Web Application** developed as part of the **Synent Technologies Web Development Internship Program**.
 
 // Project Description
