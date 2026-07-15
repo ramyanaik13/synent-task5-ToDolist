@@ -1,11 +1,10 @@
+// Smart Task Manager functionality
+// Handles adding, deleting, and managing tasks
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
 
 function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-
-
 const taskInput = document.getElementById("taskInput");
 const priority = document.getElementById("priority");
 const dueDate = document.getElementById("dueDate");
