@@ -23,7 +23,7 @@ body{
     box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
 
-/* Header */
+
 
 header{
     display:flex;
@@ -58,7 +58,7 @@ header p{
     transform:scale(1.1);
 }
 
-/* Search */
+
 
 .search-box{
     display:flex;
@@ -82,7 +82,7 @@ header p{
     font-size:16px;
 }
 
-/* Task Card */
+
 
 .task-card{
     background:#f8f9ff;
@@ -131,7 +131,6 @@ header p{
     background:#574fd6;
 }
 
-/* Progress */
 
 .progress-card{
     background:#f8f9ff;
@@ -266,7 +265,7 @@ header p{
     background:#10b981;
 }
 
-/* Buttons */
+
 
 .actions{
     display:flex;
@@ -295,7 +294,7 @@ header p{
     transform:scale(1.1);
 }
 
-/* Dark Mode */
+
 
 body.dark{
     background:#111827;
@@ -340,7 +339,7 @@ body.dark select{
     border:none;
 }
 
-/* Responsive */
+
 
 @media(max-width:768px){
 

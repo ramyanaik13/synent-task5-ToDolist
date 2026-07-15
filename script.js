@@ -6,17 +6,12 @@ function saveTasks() {
 }
 
 
-// Elements
-
 const taskInput = document.getElementById("taskInput");
 const priority = document.getElementById("priority");
 const dueDate = document.getElementById("dueDate");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
 
-
-
-// Add Task
 
 addTaskBtn.addEventListener("click", addTask);
 
@@ -66,9 +61,6 @@ function addTask(){
 
 }
 
-
-
-// Display Tasks
 
 
 function displayTasks(){
@@ -147,10 +139,6 @@ function displayTasks(){
 
         `;
 
-
-
-
-        // Complete checkbox
 
 
         let checkbox=li.querySelector(".check");
